@@ -1,6 +1,9 @@
-				# tcp/udp
-### * tcp client/server
-### * udp client/server
+				
+
+# tcp/udp (socket en in c)
+
+*### tcp client/server
+###* udp client/server
 
 Ce projet est effectué dans le cadre d'un TP de la cour de réseau de L3INFO de la faculté de science à l'université paris Saclay
 Il s'agissait de créer une connexion client/server en mode udp et une autre en mode tcp grâce aux sockets
@@ -11,18 +14,18 @@ Les connexions ont été implémenté en c donc vous devez avoir des outils du l
 Pour se procurer les fichiers, télécharger ou cloner le repository avec cette ligne de commande Git clone lien github
 Depuis un terminal,compiler les quatre fichier un par un
 
->gcc udp_server.c -o udp_server
->gcc tcp_server.c -o tcp_server
->gcc udp_client.c -o udp_client
->gcc tcp_client.c -o tcp_client
+> gcc udp_server.c -o udp_server
+> gcc tcp_server.c -o tcp_server
+> gcc udp_client.c -o udp_client
+> gcc tcp_client.c -o tcp_client
 
 #### Il faut toujours exécuter le serveur avant le client 
 Pour le mode tcp par exemple ouvrer deux terminaux
 Dans le premier terminal faites
->./tcp_server anyPortNmberForTheSever
+> ./tcp_server anyPortNmberForTheSever
 
 Puis dans le second terminal faites
->./tcp_client anyIpAddForThisClient aPortNumberSameAsTheServers
+> ./tcp_client anyIpAddForThisClient aPortNumberSameAsTheServers
 
 Voilà une connexion client/serveur en mode tcp est établi entre le terminal exécutant le client
 Et celui exécutant le serveur, vous parler au serveur depuis le terminal du client
