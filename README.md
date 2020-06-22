@@ -2,7 +2,7 @@
 
 # tcp/udp (socket en in c)
 
-*### tcp client/server
+###* tcp client/server
 ###* udp client/server
 
 Ce projet est effectué dans le cadre d'un TP de la cour de réseau de L3INFO de la faculté de science à l'université paris Saclay
@@ -42,10 +42,12 @@ Puis lorsqu'un client se connecte au serveur un cree un processus propre à ce c
 pour le moment je n'ai pas reussi à faire en sorte à ce que tous le clients voyent les messages des un des autres !
 
 Aussi j'aurais anormement aimé pouvoir mettre le fichier server.c sur le serveur de la fac et de pouvoir se connecter dessus depuis
-chez moi mais malheureusement je n'ai pas reussi ! j'ai pourtant reussi à récuperer l'adresse IP du serveur voire ci-dessus ! 
-    //*********************client socket and server
+chez moi mais malheureusement je n'ai pas reussi ! j'ai pourtant reussi à récuperer l'adresse IP du serveur voire ci-dessus !
+
+
+//**********************client socket and server
     
-   //************************ disant server ****************************** 
+  ************************ disant server ****************************** 
     const char* hostName ="tp-ssh1.dep-informatique.u-psud.fr"; 
     struct addrinfo paramToFollow;
     struct addrinfo *resultats;
