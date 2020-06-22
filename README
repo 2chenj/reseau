@@ -1,29 +1,33 @@
-tcp client/server
-udp client/server
+				# tcp/udp
+### * tcp client/server
+### * udp client/server
 
 Ce projet est effectué dans le cadre d'un TP de la cour de réseau de L3INFO de la faculté de science à l'université paris Saclay
 Il s'agissait de créer une connexion client/server en mode udp et une autre en mode tcp grâce aux sockets
- Veillez trouver l'énoncée sur le lien github : https://www.github.com/2chenj/reseau/sockets
+ Veillez trouver l'énoncée sur le lien github : [ https://www.github.com/2chenj/reseau/sockets ]
 
-Obtenir le code : 
+## Obtenir le code : 
 Les connexions ont été implémenté en c donc vous devez avoir des outils du langage de programmation c pour tester les connexions 
 Pour se procurer les fichiers, télécharger ou cloner le repository avec cette ligne de commande Git clone lien github
 Depuis un terminal,compiler les quatre fichier un par un
-gcc udp_server.c -o udp_server
-gcc tcp_server.c -o tcp_server
-gcc udp_client.c -o udp_client
-gcc tcp_client.c -o tcp_client
 
-Il faut toujours exécuter le serveur avant le client 
+>gcc udp_server.c -o udp_server
+>gcc tcp_server.c -o tcp_server
+>gcc udp_client.c -o udp_client
+>gcc tcp_client.c -o tcp_client
+
+#### Il faut toujours exécuter le serveur avant le client 
 Pour le mode tcp par exemple ouvrer deux terminaux
 Dans le premier terminal faites
-./tcp_server anyPortNmberForTheSever
+>./tcp_server anyPortNmberForTheSever
+
 Puis dans le second terminal faites
-./tcp_client anyIpAddForThisClient aPortNumberSameAsTheServers
+>./tcp_client anyIpAddForThisClient aPortNumberSameAsTheServers
+
 Voilà une connexion client/serveur en mode tcp est établi entre le terminal exécutant le client
 Et celui exécutant le serveur, vous parler au serveur depuis le terminal du client
 
-Principales fonctionnalités 
+## Principales fonctionnalités 
 Le socket permet un client de se connecter au server avec la fonction sendTo si ce client possède des infos sur l'adresse IP
 Du serveur et le port sur lequel le serveur écoute 
 Dans le mode tcp on se connect au serveur grâce à fonction connect cela a beaucoup d'avantage notamment
@@ -68,7 +72,7 @@ chez moi mais malheureusement je n'ai pas reussi ! j'ai pourtant reussi à récu
 
     //******************** end distant server
 
-Auteurs :
+## Auteurs :
 Ce projet a été réalisé par habinshuti thierry alias 2chenj@github
 License : 
 Cette implémentation est une open source et libre de droit !
