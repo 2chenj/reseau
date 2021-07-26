@@ -5,7 +5,7 @@
 ### tcp client/server
 ### udp client/server
 
-Ce projet est effectué dans le cadre d'un TP de la cour de réseau de L3INFO de la faculté de science à l'université paris Saclay
+Ce projet a été effectué dans le cadre d'un TP du cour de réseau de L3INFO de la faculté de science à l'université paris Saclay
 Il s'agissait de créer une connexion client/server en mode udp et une autre en mode tcp grâce aux sockets
  Veillez trouver l'énoncée sur le lien github : [ https://www.github.com/2chenj/reseau/sockets ]
 
@@ -31,11 +31,11 @@ Voilà une connexion client/serveur en mode tcp est établi entre le terminal ex
 Et celui exécutant le serveur, vous parler au serveur depuis le terminal du client
 
 ## Principales fonctionnalités 
-Le socket permet un client de se connecter au server avec la fonction sendTo si ce client possède des infos sur l'adresse IP
-Du serveur et le port sur lequel le serveur écoute 
+Le socket permet à un client de se connecter au server avec la fonction sendTo si ce client possède des infos sur l'adresse IP
+Du serveur et le port sur lequel le serveur écoute. 
 Dans le mode tcp on se connect au serveur grâce à fonction connect cela a beaucoup d'avantage notamment
 On a plus besoin de spécifier l’IP et le port systématiquement à l’appel des fonction send et receive
-Dans cet implémentation (tcp) nous mettrons en place un serveur qui peux accueillir plusieurs clients, le nombre maximal de client est spécifier dans la fonction accepte du serveur
+Dans cet implémentation (tcp), nous mettrons en place un serveur qui peut accueillir plusieurs clients, le nombre maximal de clients est spécifié dans la fonction accepte du serveur
 Pour accepter plusieurs clients on a mis une boucle while qui accepte les clients qui se connecte au serveur
 Puis lorsqu'un client se connecte au serveur un cree un processus propre à ce client grâce à la fonction fork() en c ainsi tous le clients peuvent  communiquer avec le serveur "simultanément". 
 
